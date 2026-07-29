@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrintOS Enterprise</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#eef3ff;
+}
+
+.header{
+background:#1565C0;
+color:white;
+padding:40px 20px;
+text-align:center;
+border-radius:0 0 30px 30px;
+}
+
+.header h1{
+font-size:32px;
+}
+
+.header p{
+margin-top:10px;
+}
+
+.container{
+padding:20px;
+max-width:500px;
+margin:auto;
+}
+
+.card{
+background:white;
+border-radius:20px;
+padding:18px;
+margin-bottom:18px;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+button{
+width:100%;
+padding:16px;
+font-size:18px;
+border:none;
+border-radius:14px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.upload{
+background:#1565C0;
+color:white;
+}
+
+.scan{
+background:#43A047;
+color:white;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:20px;
+}
+
+.box{
+background:white;
+padding:20px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 5px 12px rgba(0,0,0,.08);
+font-size:18px;
+}
+
+.status{
+margin-top:20px;
+background:white;
+padding:15px;
+border-radius:18px;
+display:flex;
+justify-content:space-between;
+}
+
+.green{
+color:green;
+font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+<h1>🖨 PrintOS Enterprise</h1>
+<p>Upload • Pay • Print</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>Welcome</h2>
+<p>Print documents in just a few taps.</p>
+
+<button class="upload">📂 Upload Document</button>
+
+<button class="scan">📷 Scan QR</button>
+</div>
+
+<div class="grid">
+
+<div class="box">
+📄<br><br>Document
+</div>
+
+<div class="box">
+🖼️<br><br>Photo
+</div>
+
+<div class="box">
+📑<br><br>Xerox
+</div>
+
+<div class="box">
+📠<br><br>Scan
+</div>
+
+</div>
+
+<div class="status">
+<span>Printer Status</span>
+<span class="green">Ready</span>
+</div>
+
+</div>
+
+</body>
+</html>
