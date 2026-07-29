@@ -113,7 +113,26 @@ font-weight:bold;
 <p>Print documents in just a few taps.</p>
 
 <button class="upload">📂 Upload Document</button>
+<input
+    type="file"
+    id="fileInput"
+    accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+    hidden>
 
+<button class="upload" onclick="document.getElementById('fileInput').click();">
+📂 Upload Document
+</button>
+
+<div class="card" id="fileCard" style="display:none;margin-top:15px;">
+    <h3>Selected File</h3>
+    <p id="fileName"></p>
+    <p id="fileSize"></p>
+</div>
+
+<button id="continueBtn" disabled
+style="margin-top:15px;padding:15px;width:100%;background:#1565C0;color:white;border:none;border-radius:12px;opacity:.5;">
+Continue →
+</button>
 <button class="scan">📷 Scan QR</button>
 </div>
 
